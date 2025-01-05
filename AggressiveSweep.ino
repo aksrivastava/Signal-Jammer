@@ -1,5 +1,5 @@
 /**********************************************************************
- * Aggressive Sweep for ADF4351
+ * Aggressive Jammer with ADF4351
  * 
  * WARNING:
  *  - This code rapidly sweeps from ~35 MHz to 4.4 GHz.
