@@ -40,6 +40,26 @@ The primary use case is for **educational and research purposes** in a **control
 | **Power Supply**          | 5V USB adapter or battery        | $5 - $10               |
 | **Cables & Connectors**   | SMA cables, jumper wires         | $5 - $10               |
 
+### 🔧 **Step-by-Step Instructions:**
+
+#### 1️⃣ **Power the ADF4351 Module**:
+- Connect the **5V pin** on the Arduino to the **VCC pin** on the ADF4351 module.
+- Connect **GND** on the Arduino to **GND** on the module.
+
+#### 2️⃣ **Establish SPI Communication**:
+- Connect **D13 (SCK)** on the Arduino to **SCK** on the ADF4351 module.
+- Connect **D11 (MOSI)** on the Arduino to **MOSI** on the module.
+- Optionally, connect **D12 (MISO)** if your setup requires bidirectional communication.
+
+#### 3️⃣ **Latch Enable (Chip Select)**:
+- Connect **D10 (CS/LE)** on the Arduino to **LE** on the ADF4351 module. This pin controls when data is latched into the module.
+
+#### 4️⃣ **Antenna Connection**:
+- Connect a suitable **antenna** to the **RF output SMA connector** on the ADF4351 module. The antenna should be tuned for the desired frequency range.
+
+#### 5️⃣ **Check Connections**:
+- Double-check all connections to ensure they are secure and correct. Incorrect wiring can damage your components.
+
 ---
 
 ## 🖥️ **Software Requirements**
